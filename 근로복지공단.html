@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>근로복지공단</title>
+  <link rel="stylesheet" href="css/근로복지공단.css" />
+  <script src="lib/jquery-3.7.0.min.js"></script>
+  <script>
+    $(function () {
+      $("header .header_left .nav ul li").mouseenter(function () {
+        $("#wrap .menu_box .depth02").removeClass("on");
+        $("#wrap .menu_box .depth02").eq($(this).index()).addClass("on");
+      });
+      $("#wrap .menu_box").mouseleave(function () {
+        $("#wrap .menu_box .depth02").removeClass("on");
+      });
+
+      $('.depth02 .menu_list >  li > a').mouseenter(function(){
+        $('.depth02 .menu_list li .depth03').removeClass('on')
+        $(this).next().addClass('on')
+      })
+
+      // $('.depth02 .menu_list >  li').mouseenter(function(){
+      //   $('.depth02 .menu_list >  li').removeClass('on')
+      //   $(this).addClass('on')
+      // })
+
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(1)').mouseenter(function(){
+        $('.depth02:nth-child(2) .menu_list').addClass('on')
+      })
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(1)').mouseleave(function(){
+        $('.depth02:nth-child(2) .menu_list').removeClass('on')
+      })
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(2)').mouseenter(function(){
+        $('.depth02:nth-child(2) .menu_list').addClass('on1')
+      })
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(2)').mouseleave(function(){
+        $('.depth02:nth-child(2) .menu_list').removeClass('on1')
+      })
+
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(3)').mouseenter(function(){
+        $('.depth02:nth-child(2) .menu_list').addClass('on2')
+      })
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(3)').mouseleave(function(){
+        $('.depth02:nth-child(2) .menu_list').removeClass('on2')
+      })
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(4)').mouseenter(function(){
+        $('.depth02:nth-child(2) .menu_list').addClass('on3')
+      })
+      $('.depth02:nth-child(2) .menu_list >li:nth-child(4)').mouseleave(function(){
+        $('.depth02:nth-child(2) .menu_list').removeClass('on3')
+      })
+
+
+      $('.depth02:nth-child(3) .menu_list >li:nth-child(1)').mouseenter(function(){
+        $('.depth02:nth-child(3) .menu_list').addClass('on4')
+      })
+      $('.depth02:nth-child(3) .menu_list >li:nth-child(1)').mouseleave(function(){
+        $('.depth02:nth-child(3) .menu_list').removeClass('on4')
+      })
+      $('.depth02:nth-child(3) .menu_list >li:nth-child(6)').mouseenter(function(){
+        $('.depth02:nth-child(3) .menu_list').addClass('on5')
+      })
+      $('.depth02:nth-child(3) .menu_list >li:nth-child(6)').mouseleave(function(){
+        $('.depth02:nth-child(3) .menu_list').removeClass('on5')
+      })
+
+
+      $('.depth02:nth-child(4) .menu_list >li:nth-child(7)').mouseenter(function(){
+        $('.depth02:nth-child(4) .menu_list').addClass('on6')
+      })
+      $('.depth02:nth-child(4) .menu_list >li:nth-child(7)').mouseleave(function(){
+        $('.depth02:nth-child(4) .menu_list').removeClass('on6')
+      })
+
+
+      $('.footer_sec .item_list .item').click(function(){
+        
+        $(this).children('.option').toggleClass('on')
+      })
+    });
+  </script>
+</head>
+
+<body>
+  <div id="go_main">
+    <a href="#nav">주메뉴바로가기</a>
+    <a href="#main">본문바로가기</a>
+  </div>
+  <div id="wrap">
+    <header>
+      <div class="header_left">
+        <div class="logo">
+          <h1>
+            <a href="#">
+              <img src="img/logo.png" alt="로고" />
+            </a>
+          </h1>
+        </div>
+        <!-- logo end -->
+        <div class="nav" id="nav">
+          <ul class="gnb">
+            <li class="depth01">
+              <a href="#">공단소개</a>
+            </li>
+            <!-- depth01 end -->
+
+            <li class="depth01">
+              <a href="#">사업안내</a>
+            </li>
+            <!-- depth01 end -->
+
+            <li class="depth01">
+              <a href="#">국민소통</a>
+            </li>
+            <!-- depth01 end -->
+
+            <li class="depth01">
+              <a href="#">정보공개</a>
+            </li>
+            <!-- depth01 end -->
+          </ul>
+          <!-- gnb end -->
+        </div>
+        <!-- nav end -->
+      </div>
+      <!-- header_left end -->
+
+      <div class="header_right">
+        <div class="lang">
+          <a href="#">
+            <figure><img src="img/ico-lang.png" alt="언어아이콘" /></figure>
+            <p>ENG</p>
+          </a>
+        </div>
+        <!-- eng end -->
+        <div class="header_btn1 header_btn">
+          <a href="#">고용산재토탈서비스
+            <figure><img src="img/ico-popup.png" alt="팝업아이콘" /></figure>
+          </a>
+        </div>
+        <!-- header_btn1 end -->
+
+        <div class="header_btn2 header_btn">
+          <a href="#">업무별 사이트
+            <figure>
+              <img src="img/ico-site.png" alt="사이트아이콘" />
+            </figure>
+          </a>
+        </div>
+        <!-- header_btn2 end -->
+        <div class="menu">
+          <a href="#">
+            <img src="img/btn-menu.png" alt="메뉴아이콘" />
+          </a>
+        </div>
+        <!-- menu end -->
+      </div>
+      <!-- header_right end -->
+    </header>
+
+    <div class="menu_box">
+      <div class="depth02">
+        <div class="title">
+          <div>
+            <h1>공단소개</h1>
+            <p>
+              일하는 사람들의 희망<br />
+              세계최고의 사회보장서비스 기관
+            </p>
+          </div>
+        </div>
+        <!-- title end -->
+
+        <ul class="menu_list">
+          <li>
+            <a href="#">이사장인사말</a>
+          </li>
+          <li>
+            <a href="#">연혁</a>
+          </li>
+          <li>
+            <a href="#">비전 및 전략</a>
+            <ul class="depth03">
+              <li><a href="#">미션</a></li>
+              <li><a href="#">비전</a></li>
+              <li><a href="#">핵심가치</a></li>
+              <li><a href="#">경영방침</a></li>
+              <li><a href="#">중장기 경영전략</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+          <li>
+            <a href="#">조직안내</a>
+            <ul class="depth03">
+              <li><a href="#">전체조직도</a></li>
+              <li><a href="#">공단본부</a></li>
+              <li><a href="#">지역본부 및 지사</a></li>
+              <li><a href="#">기타 소속기관</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+          <li>
+            <a href="#">열린경영</a>
+            <ul class="depth03">
+              <li><a href="#">경영혁신</a></li>
+              <li><a href="#">경영공시</a></li>
+              <li><a href="#">자산운용</a></li>
+              <li><a href="#">국제협력</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+          <li>
+            <a href="#">COMWEL ESG경영</a>
+            <ul class="depth03">
+              <li><a href="#">ESG경영</a></li>
+              <li><a href="#">환경(Environment)</a></li>
+              <li><a href="#">사회(Social)</a></li>
+              <li><a href="#">지배구조(Governance)</a></li>
+              <li><a href="#">ESG 경영공시</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+          
+          <li>
+            <a href="#">안전보건경영</a>
+            <ul class="depth03">
+              <li><a href="#">안전보건 경영방침</a></li>
+              <li><a href="#">안전보건 조직구성</a></li>
+              <li><a href="#">안전보건 경영현황</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+          <li>
+            <a href="#">공단 CI 및 캐릭터</a>
+          </li>
+          <li>
+            <a href="#">공단은 지금</a>
+            <ul class="depth03">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">공단 이모저모</a></li>
+              <li><a href="#">수상내역</a></li>
+              <li><a href="#">이벤트 소식</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+        </ul>
+        <!-- menu_list end -->
+      </div>
+      <!-- depth02 end -->
+
+      <div class="depth02">
+        <div class="title">
+          <div>
+            <h1>사업안내</h1>
+            <p>
+              일하는 생애를 아우르는<br />
+              공단의 노동복지 사업을 소개합니다
+            </p>
+          </div>
+        </div>
+        <!-- title end -->
+
+        <ul class="menu_list">
+          <li>
+            <a href="#">산재보상</a>
+            <ul class="depth03">
+              <li><a href="#">산재보상</a></li>
+              <li><a href="#">요약절차</a></li>
+              <li><a href="#">요양지원(치료)</a></li>
+              <li><a href="#">심사청구(이의제기)절차</a></li>
+              <li><a href="#">통상의 출퇴근재해란</a></li>
+              <li><a href="#">업무상 스트레스로 정신건강이 손상된 경우 산재신청</a></li>
+              <li><a href="#">코로나바이러스감염증-19 감염된 경우 산재신청</a></li>
+              <li><a href="#">임신중 업무상 사유로 인한 자녀의 건강손상 산재신청</a></li>
+              <li><a href="#">노무제공자의 산재신청</a></li>
+            </ul>
+            <!-- depth03 end -->
+          </li>
+          <li>
+            <a href="#">가입납부</a>
+            <ul class="depth03">
+              <li><a href="#">산재·고용보험</a></li>
+              <li><a href="#">산재·고용보험 적용특례</a></li>
+              <li><a href="#">자격관리</a></li>
+              <li><a href="#">보혐료 신고 및 납부</a></li>
+              <li><a href="#">보험사무대행기관</a></li>
+              <li><a href="#">벌칙</a></li>
+              <li><a href="#">고용·산재보험 미가입 사업장 신고센터</a></li>
+              <li><a href="#">근로자·예술인·노무제공자 지원금 미지급 신고센터</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">치료 및 재활</a>
+            <ul class="depth03">
+              <li><a href="#">의료서비스 종합안내</a></li>
+              <li><a href="#">맞춤형 통합 서비스</a></li>
+              <li><a href="#">요양단계별 재활서비스</a></li>
+              <li><a href="#">프로그램별 재활서비스</a></li>
+              <li><a href="#">사업주지원</a></li>
+              <li><a href="#">직무지원형 재활보조기기 안내</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">근로자복지</a>
+            <ul class="depth03">
+              <li><a href="#">융자사업</a></li>
+              <li><a href="#">문화·여가지원</a></li>
+              <li><a href="#">공단운영어린이집</a></li>
+              <li><a href="#">신용보증지원</a></li>
+              <li><a href="#">임금채권보장</a></li>
+              <li><a href="#">체불청산지원사업주 및 체불근로자생계비 융자</a></li>
+              <li><a href="#">산재근로자복지지원</a></li>
+              <li><a href="#">사내·공동근로복지기금지원</a></li>
+              <li><a href="#">근로자지원프로그램 (EAP)</a></li>
+              <li><a href="#">직장보육지원센터</a></li>
+              <li><a href="#">퇴직연금</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+        </ul>
+        <!-- menu_list end -->
+      </div>
+
+      <div class="depth02">
+        <div class="title">
+          <div>
+            <h1>국민소통</h1>
+            <p>
+              언제나 고객 가까이에서<br />
+              최고의 서비스를 제공하도록
+            </p>
+          </div>
+        </div>
+        <!-- title end -->
+
+        <ul class="menu_list">
+          <li>
+            <a href="#">민원/조회</a>
+            <ul class="depth03">
+              <li><a href="#">사업장관리번호 찾기</a></li>
+              <li><a href="#">산재보험 사업종류 검색기</a></li>
+              <li><a href="#">산재보험료 알아보기</a></li>
+              <li><a href="#">고용보험료 알아보기</a></li>
+              <li><a href="#">국민연금,건강보험료 알아보기</a></li>
+              <li><a href="#">개인직영공사 보험료 알아보기</a></li>
+              <li><a href="#">보험사무대행기관 찾기</a></li>
+              <li><a href="#">산재지정 의료기관 찾기</a></li>
+              <li><a href="#">산재지정 약국 찾기</a></li>
+              <li><a href="#">나의 사건 검색(최초요양)</a></li>
+              <li><a href="#">나의 사건 검색(질병판정)</a></li>
+              <li><a href="#">나의 사건 검색(심사청구)</a></li>
+              <li><a href="#">나의 사건 검색(보상)</a></li>
+              <li><a href="#">나의 민원 검색(가입)</a></li>
+              <li><a href="#">마이페이지</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">국민제안</a>
+            <ul class="depth03">
+              <li><a href="#">국민제안안내</a></li>
+              <li><a href="#">국민제안신청</a></li>
+              <li><a href="#">국민제안사례</a></li>
+              <li><a href="#">내 제안보기</a></li>
+              <li><a href="#">재난/안전 제안신청</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">고객의 소리</a>
+            <ul class="depth03">
+              <li><a href="#">고객서비스헌장</a></li>
+              <li><a href="#">칭찬합시다</a></li>
+              <li><a href="#">불친절접수방</a></li>
+              <li><a href="#">자유게시판</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">고객상담</a>
+            <ul class="depth03">
+              <li><a href="#">사이버고객상담</a></li>
+              <li><a href="#">산재보상 권리구제 Happy-call 신청</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">국민참여예산</a>
+          </li>
+          <li>
+            <a href="#">신고센터</a>
+            <ul class="depth03">
+              <li><a href="#">청탁금지법 위반행위 신고</a></li>
+              <li><a href="#">부조리신고</a></li>
+              <li><a href="#">공익침해행위 신고</a></li>
+              <li><a href="#">불합리규제신고센터</a></li>
+              <li><a href="#">예산낭비신고센터</a></li>
+              <li><a href="#">산재부정수급신고</a></li>
+              <li><a href="#">특수형태근로종사자 신고 및 상담센터</a></li>
+              <li><a href="#">불공정거래 신고센터</a></li>
+              <li><a href="#">불법의료기관(사무장병원·약국)신고</a></li>
+              <li><a href="#">인권상담센터</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+        </ul>
+        <!-- menu_list end -->
+      </div>
+      <!-- depth02 end -->
+
+      <div class="depth02">
+        <div class="title">
+          <div>
+            <h1>국민소통</h1>
+            <p>
+              근로복지공단에서는<br />
+              국민의 알권리를 보장합니다
+            </p>
+          </div>
+        </div>
+        <!-- title end -->
+
+        <ul class="menu_list">
+          <li>
+            <a href="#">사전정보공표</a>
+            <ul class="depth03">
+              <li><a href="#">사전정보공표 공개</a></li>
+              <li><a href="#">사전정보공표 제안</a></li>
+              <li><a href="#">행정지침·질의회시</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">정보목록</a>
+            <ul class="depth03">
+              <li><a href="#">정보목록</a></li>
+              <li><a href="#">과거자료 정보목록</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">정보공개</a>
+            <ul class="depth03">
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">비공개세부기준</a></li>
+              <li><a href="#">청구하기</a></li>
+              <li><a href="#">고객의 소리함</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">공공데이터</a>
+            <ul class="depth03">
+              <li><a href="#">공공데이터 제공</a></li>
+              <li><a href="#">공공데이터 제공 목록</a></li>
+              <li><a href="#">공공데이터 제공 신청</a></li>
+              <li><a href="#">공공데이터 1번가</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">사업실명제</a>
+          </li>
+          <li>
+            <a href="#">투명한경영</a>
+            <ul class="depth03">
+              <li><a href="#">계약정보</a></li>
+              <li><a href="#">업무추진비</a></li>
+              <li><a href="#">온누리상품권</a></li>
+              <li><a href="#">공시송달</a></li>
+              <li><a href="#">기금운용</a></li>
+              <li><a href="#">부패행위 현황공개</a></li>
+              <li><a href="#">친인척채용현황</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+          <li>
+            <a href="#">자료실</a>
+            <ul class="depth03">
+              <li><a href="#">고시·규정·세칙</a></li>
+              <li><a href="#">규정 제·개정 예고</a></li>
+              <li><a href="#">법령자료</a></li>
+              <li><a href="#">실무자료</a></li>
+              <li><a href="#">서식자료</a></li>
+              <li><a href="#">통계자료</a></li>
+              <li><a href="#">산재판례정보</a></li>
+              <li><a href="#">소송·행정구제 절차 및 정보</a></li>
+              <li><a href="#">직업환경연구원 전문조사 사례</a></li>
+            </ul><!-- .depth03 end -->
+          </li>
+        </ul>
+        <!-- menu_list end -->
+      </div>
+      <!-- depth02 end -->
+    </div>
+    <!-- menu_box end -->
+
+    <div id="main" class="main_visual">
+      <div class="inner">
+        <div class="main_list">
+          <div class="left">
+            <figure>
+              <img src="img/두루누리_하반기_집중홍보_공공기관_630X300.jpg" alt="두루누리" />
+            </figure>
+            <div class="slide_btn">
+              <span>2/6</span>
+            </div>
+            <!-- slide_btn end -->
+          </div>
+          <!-- left end -->
+
+          <div class="right">
+            <div class="right_top">
+              <figure>
+                <img src="img/img-main-txt_231010.jpg" alt="푸른씨앗이미지" />
+              </figure>
+            </div>
+            <!-- right_top end -->
+
+            <div class="right_bottom">
+              <label>
+              <input type="search" placeholder="무엇을 찾고 계신가요?" />
+              <input class="submit" type="submit" value="검색" /></label>
+              <figure>
+                <img src="img/ico-search.png" alt="검색아이콘" />
+              </figure>
+            </div>
+            <!-- right_bottom end -->
+          </div>
+          <!-- main_right end -->
+        </div>
+        <!-- main_list end -->
+      </div>
+      <!-- inner end -->
+    </div>
+    <!-- main_visual end -->
+
+    <div class="section1">
+      <div class="inner">
+        <div class="title">
+          <h1>자주찾는 <span>서비스</span></h1>
+          <h1 class="tel">
+            <figure><img src="img/ico-telephone.png" alt="전화" /></figure>
+            1588-0075
+          </h1>
+        </div>
+        <!-- title end -->
+
+        <div class="item_box">
+          <div class="left_arrow">
+            <figure><img src="img/arrow-left.png" alt="버튼" /></figure>
+          </div>
+          <!-- left_arrow end -->
+          <div class="item_list">
+            <div class="item">
+              <figure><img src="img/ico-info01.png" alt="버튼" /></figure>
+              <h2>사업장<br />관리번호 찾기</h2>
+            </div>
+            <!-- item end -->
+            <div class="item">
+              <figure><img src="img/ico-info05.png" alt="버튼" /></figure>
+              <h2>전자팩스<br />수신조회</h2>
+            </div>
+            <!-- item end -->
+            <div class="item">
+              <figure><img src="img/ico-info06.png" alt="버튼" /></figure>
+              <h2>나의 민원 검색</h2>
+            </div>
+            <!-- item end -->
+            <div class="item">
+              <figure><img src="img/ico-info07.png" alt="버튼" /></figure>
+              <h2>온라인<br />고객상담</h2>
+            </div>
+            <!-- item end -->
+            <div class="item">
+              <figure><img src="img/ico-info08.png" alt="버튼" /></figure>
+              <h2>산재지정<br />의료기관 찾기</h2>
+            </div>
+            <!-- item end -->
+          </div>
+          <!-- item_list end -->
+          <div class="right_arrow">
+            <figure><img src="img/arrow-right.png" alt="버튼" /></figure>
+          </div>
+          <!-- right_arrow end -->
+        </div>
+        <!-- item_box end -->
+        <div class="item_box1">
+          <div class="item"></div>
+          <!-- item end -->
+        </div>
+        <!-- item_box1 end -->
+      </div>
+      <!-- inner end -->
+    </div>
+    <!-- section1 end -->
+
+    <div class="section2">
+      <div class="inner">
+        <h1><span>주요사업</span> 안내</h1>
+
+        <div class="item_list">
+          <div class="item">
+            <figure>
+              <img src="img/ico-b-info02.png" alt="버튼" />
+            </figure>
+            <h2>산재보상·재활</h2>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/ico-b-info01.png" alt="버튼" />
+            </figure>
+            <h2>산재·고용보험 가입</h2>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/ico-b-info05.png" alt="버튼" />
+            </figure>
+            <h2>퇴직연금</h2>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/ico-b-info03.png" alt="버튼" />
+            </figure>
+            <h2>근로자복지</h2>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/ico-b-info04.png" alt="버튼" />
+            </figure>
+            <h2>공단 병원</h2>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- item_list end -->
+      </div>
+      <!-- inner end -->
+    </div>
+    <!-- section2 end -->
+
+    <div class="section3">
+      <div class="inner">
+        <div class="left">
+          <h1>알림창</h1>
+          <div class="item">
+            <figure>
+              <img src="img/230922_알림창_납부기한-연장-안내.png" alt="알림창" />
+            </figure>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- left end -->
+
+        <div class="right">
+          <div class="title">
+            <h1>공단 소식</h1>
+            <div class="title_right">
+              <h1><span>홍보존</span></h1>
+              <div>
+                <!-- icon_list -->
+                <figure><img src="img/ico-sns05.png" alt="아이콘" /></figure>
+                <figure><img src="img/ico-sns01.png" alt="아이콘" /></figure>
+                <figure><img src="img/ico-sns02.png" alt="아이콘" /></figure>
+                <figure><img src="img/ico-sns03.png" alt="아이콘" /></figure>
+                <figure><img src="img/ico-sns04.png" alt="아이콘" /></figure>
+              </div>
+              <!-- icon_list end -->
+            </div>
+            <!-- title_right end -->
+          </div>
+          <!-- title end -->
+
+          <div class="info">
+            <div class="inner">
+              <div class="info_title">
+                <div>
+                  <h2 class="on">공지사항</h2>
+                  <h2>보도자료</h2>
+                  <h2>사전정보공표</h2>
+                </div>
+                <figure>
+                  <img src="img/btn-more.png" alt="더보기버튼" />
+                </figure>
+              </div>
+              <!-- info_title end -->
+
+              <div class="gray">
+                <h3>
+                  개인정보의 목적 외 이용 및 제3자 제공
+                  내역(2023.10.01.~2023.10.15.)
+                </h3>
+                <span>2023-10-19</span>
+              </div>
+              <!-- gray end -->
+              <ul class="news">
+                <li>
+                  <p>
+                    초대합니다. 노을 맛집 노들섬에 놀러오세요~ (제2회 예작전
+                    전시회)
+                  </p>
+                  <span>2023-10-17</span>
+                </li>
+                <li>
+                  <p>사회복귀서비스 수기 공모전 실시 알림</p>
+                  <span>2023-10-13</span>
+                </li>
+                <li>
+                  <p>
+                    2023년 민생안정대책 관련 고용·산재보험료 납부기한 연장
+                    안내
+                  </p>
+                  <span>2023-10-10</span>
+                </li>
+              </ul>
+            </div>
+            <!-- inner end -->
+          </div>
+          <!-- info end -->
+        </div>
+        <!-- right end -->
+      </div>
+      <!-- inner end -->
+    </div>
+    <!--  section3 end -->
+
+    <footer>
+      <div class="footer_fir">
+        <div class="item_list">
+          <div class="item">
+            <figure>
+              <img src="img/02footer_icon_230830.jpg" alt="대한민국인적자원개발 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/03footer_icon.jpg" alt="우수콜센터 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/04footer_icon.jpg" alt="존경받는기업수상 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/05footer_icon.jpg" alt="글로벌헬스케어 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/07footer_icon.jpg" alt="웹접근성품질마크 획득 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/08footer_icon.jpg" alt="여성가족부 가족친화우수기관 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+          <div class="item">
+            <figure>
+              <img src="img/10footer_icon.jpg" alt="공공기관 청렴노력도 이미지" />
+            </figure>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- item_list end -->
+      </div>
+      <!-- footer_fir end -->
+
+      <div class="footer_sec">
+        <div class="item_list">
+          <div class="item">
+            <p>관련사이트 바로가기</p>
+            <figure>
+              <img src="img/f-ico-select.png" alt="선택아이콘" />
+            </figure>
+            <div class="option">
+              <ul>
+                <li>영문홈페이지(ENG)</li>
+                <li>토탈서비스</li>
+                <li>인재개발원</li>
+                <li>근로복지넷</li>
+                <li>퇴직연금</li>
+                <li>산재판례정보</li>
+                <li>근로복지연구원</li>
+                <li>직업환경연구원</li>
+                <li>직장보육지원센터</li>
+                <li>어린이 홈페이지</li>
+              </ul>
+            </div>
+            <!-- option end -->
+          </div>
+          <!-- item end -->
+
+          <div class="item">
+            <p>고용노동부/산하기관</p>
+            <figure>
+              <img src="img/f-ico-select.png" alt="선택아이콘" />
+            </figure>
+            <div class="option">
+              <ul>
+                <li>고용노동부</li>
+                <li>한국산업인력공단</li>
+                <li>한국산업안전보건공단</li>
+                <li>한국장애인고용공단</li>
+                <li>한국고용정보원</li>
+                <li>한국사회적기업진흥원</li>
+                <li>노사발전재단</li>
+                <li>학교법인한국폴리텍</li>
+                <li>한국기술교육대학교</li>
+                <li>한국잡월드</li>
+                <li>건설근로자공제회</li>
+                <li>한국직업방송</li>
+              </ul>
+            </div>
+            <!-- option end -->
+          </div>
+          <!-- item end -->
+
+          <div class="item">
+            <p>유관기관/기타</p>
+            <figure>
+              <img src="img/f-ico-select.png" alt="선택아이콘" />
+            </figure>
+            <div class="option">
+              <ul>
+                <li>4대사회보험</li>
+                <li>고용보험</li>
+                <li>국민연금공단</li>
+                <li>국민건강보험공단</li>
+                <li>장애인고용포털</li>
+                <li>한국기후환경네트워크</li>
+                <li>e하나로 민원</li>
+                <li>기획재정부</li>
+                <li>어린이경제교실</li>
+                <li>국민권익위원회</li>
+                <li>보건복지부</li>
+                <li>국가직무능력표준</li>
+                <li>안전신문고</li>
+                <li>복지로</li>
+              </ul>
+            </div>
+            <!-- option end -->
+          </div>
+          <!-- item end -->
+
+          <div class="item">
+            <p>패널마당</p>
+            <figure>
+              <img src="img/f-ico-select.png" alt="선택아이콘" />
+            </figure>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- item_list end -->
+      </div>
+      <!-- footer_sec end -->
+      <div class="footer_thi">
+        <div class="inner">
+          <div class="footer_logo">
+            <figure><img src="img/f-logo.png" alt="로고" /></figure>
+          </div>
+          <!-- footer_logo end -->
+          <div class="footer_copy">
+            <ul class="fir">
+              <li>개인정보취급방침</li>
+              <li>이메일 무단 수집 거부</li>
+              <li>저작권보호정책</li>
+            </ul>
+            <!-- fir end -->
+
+            <div class="sec">
+              <ul>
+                <li>
+                  우편번호 [44428] 울산광역시 중구 종가로 340 근로복지공단 /
+                  대표전화 : 1588-0075(통화료 발신자 부담)
+                </li>
+                <li>Copyright ⓒ 2023 by 근로복지공단 All rights Reserved.</li>
+              </ul>
+            </div>
+            <!-- sec end -->
+          </div>
+          <!-- footer_copy end -->
+        </div>
+        <!-- inner end -->
+      </div>
+      <!-- footer_thi end -->
+    </footer>
+  </div>
+  <!-- wrap end -->
+</body>
+
+</html>
